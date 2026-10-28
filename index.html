@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sole Style | Premium Footwear</title>
+    <style>
+        :root {
+            --primary: #111;
+            --accent: #e63946;
+            --bg: #f8f9fa;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        header {
+            background: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+            color: var(--primary);
+        }
+        .hero {
+            background: linear-gradient(135deg, #2b2d42, #111);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #adb5bd;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: var(--accent);
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #d62828;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            height: 220px;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-weight: bold;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .price {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            margin-top: 80px;
+            border-top: 1px solid #eaeaea;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SOLE STYLE</h1>
+        <nav>
+            <a href="#shop" style="text-decoration: none; color: #111; font-weight: 600;">Shop Collection</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Step Into Confidence</h2>
+        <p>Discover premium footwear crafted for ultimate comfort and timeless design.</p>
+        <a href="#shop" class="btn">Explore Collection</a>
+    </section>
+
+    <div class="container" id="shop">
+        <h2 style="text-align: center; margin-bottom: 40px;">Featured Sneakers</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img">👟 Signature Runner</div>
+                <div class="product-info">
+                    <h3>Urban Apex Runner</h3>
+                    <div class="price">$120.00</div>
+                    <a href="#" class="btn" style="padding: 8px 16px; font-size: 14px;">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">👞 Classic Leather</div>
+                <div class="product-info">
+                    <h3>Minimalist Low-Top</h3>
+                    <div class="price">$145.00</div>
+                    <a href="#" class="btn" style="padding: 8px 16px; font-size: 14px;">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">⚡ Streetwear High</div>
+                <div class="product-info">
+                    <h3>Vortex High-Top</h3>
+                    <div class="price">$160.00</div>
+                    <a href="#" class="btn" style="padding: 8px 16px; font-size: 14px;">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sole Style. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
